@@ -10,6 +10,17 @@ a:link {
   font-weight: bold;
 }
 
+header,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+img {
+  margin: 0 auto;
+}
+
 .main-nav li {
   list-style: none;
 }
