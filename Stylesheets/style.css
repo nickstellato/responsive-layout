@@ -27,6 +27,11 @@ img {
 
 /*  HELPER CLASSES */
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .clearfix::after {
 
 }
