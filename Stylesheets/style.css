@@ -1,1 +1,21 @@
 /*  STYLES */
+* {
+  box-sizing: border-box;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+/*  HELPER CLASSES */
+
+.clearfix::after {
+
+}
