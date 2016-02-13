@@ -3,12 +3,52 @@
   box-sizing: border-box;
 }
 
+/* BASE STYLE */
+
 a:link {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.main-nav li {
+  list-style: none;
+}
+
+footer {
+  margin: 20px;
+  padding-top: 20px;
+  border-top: 1px solid lightgrey;
+}
+
+/* TYPOGRAPHY */
+
+h2 {
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+p {
+  font-size: 1em;
+}
+
+footer .name,
+footer a {
+  font-weight: 800;
+  font-size: .9em;
+}
+
+footer a {
+  text-transform: uppercase;
+}
+
+/* LAYOUT STYLES */
 
 header,
 h2,
@@ -18,11 +58,19 @@ p {
 }
 
 img {
-  margin: 0 auto;
+  width: 100%;
 }
 
-.main-nav li {
-  list-style: none;
+header img {
+  width: 60%;
+}
+
+footer .name {
+  float: left;
+}
+
+footer a {
+  float: right;
 }
 
 /*  HELPER CLASSES */
