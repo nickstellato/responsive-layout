@@ -17,26 +17,33 @@ a:link {
   font-weight: bold;
 }
 
+.main-nav {
+  list-style: none;
+}
+
 h2,
 h3,
-p {
+p,
+.main-nav li {
   text-align: center;
 }
 
 .main-header,
-nav {
+.main-nav {
   display: flex;
+  flex-direction: column;
 }
 
-.main-header {
-  padding-top: 2em;
+.name {
+  align-self: center;
 }
 
-.main-header .name {
-  width: 50px;
+.profile-image {
+  width: 60%;
+  margin: inherit;
 }
 
-img {
+.portfolio-image {
   width: 100%;
 }
 
@@ -54,7 +61,7 @@ footer {
 h2,
 h3,
 p {
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 h2 {
@@ -69,7 +76,6 @@ h3 {
 
 p {
   font-size: 1em;
-  font-weight: lighter;
 }
 
 footer .name,
