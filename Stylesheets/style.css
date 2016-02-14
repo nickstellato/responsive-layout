@@ -3,7 +3,9 @@
   box-sizing: border-box;
 }
 
-/* BASE STYLE */
+/*  ---------------------
+    Layout Styles
+------------------------ */
 
 a:link {
   text-decoration: none;
@@ -12,8 +14,42 @@ a:link {
   font-weight: bold;
 }
 
+header,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+main-header {
+  padding-top: 2em;
+}
+
+.main-header .name {
+  width: 50px;
+}
+
 .main-nav li {
   list-style: none;
+}
+
+nav {
+  margin-top: 1.5em;
+}
+
+nav a {
+  display: block;
+  font-size: 1.125em;
+  padding: .4em;
+  border-bottom: 1px solid lightgrey;
+}
+
+img {
+  width: 100%;
+}
+
+header img {
+  width: 60%;
 }
 
 footer {
@@ -22,7 +58,10 @@ footer {
   border-top: 1px solid lightgrey;
 }
 
-/* TYPOGRAPHY */
+
+/*  ---------------------
+    Typography
+------------------------ */
 
 h2 {
   text-transform: uppercase;
@@ -46,34 +85,12 @@ footer a {
 
 footer a {
   text-transform: uppercase;
+  font-size: .7em;
 }
 
-/* LAYOUT STYLES */
-
-header,
-h2,
-h3,
-p {
-  text-align: center;
-}
-
-img {
-  width: 100%;
-}
-
-header img {
-  width: 60%;
-}
-
-footer .name {
-  float: left;
-}
-
-footer a {
-  float: right;
-}
-
-/*  HELPER CLASSES */
+/*  ---------------------
+    Helper Classes
+------------------------ */
 
 .container {
   width: 90%;
@@ -81,5 +98,23 @@ footer a {
 }
 
 .clearfix::after {
-
+	content: "";
+	display: table;
+	clear: both;
 }
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.call-out {
+  font-weight: bold;
+}
+
+/*  ---------------------
+    Media Queries
+------------------------ */
