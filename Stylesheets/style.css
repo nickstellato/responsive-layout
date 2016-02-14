@@ -1,4 +1,7 @@
-/*  STYLES */
+/*  ---------------------
+    Universal Styles
+------------------------ */
+
 * {
   box-sizing: border-box;
 }
@@ -14,14 +17,18 @@ a:link {
   font-weight: bold;
 }
 
-header,
 h2,
 h3,
 p {
   text-align: center;
 }
 
-main-header {
+.main-header,
+nav {
+  display: flex;
+}
+
+.main-header {
   padding-top: 2em;
 }
 
@@ -29,27 +36,8 @@ main-header {
   width: 50px;
 }
 
-.main-nav li {
-  list-style: none;
-}
-
-nav {
-  margin-top: 1.5em;
-}
-
-nav a {
-  display: block;
-  font-size: 1.125em;
-  padding: .4em;
-  border-bottom: 1px solid lightgrey;
-}
-
 img {
   width: 100%;
-}
-
-header img {
-  width: 60%;
 }
 
 footer {
@@ -63,6 +51,12 @@ footer {
     Typography
 ------------------------ */
 
+h2,
+h3,
+p {
+  line-height: 1.5em;
+}
+
 h2 {
   text-transform: uppercase;
   font-size: .8em;
@@ -75,6 +69,7 @@ h3 {
 
 p {
   font-size: 1em;
+  font-weight: lighter;
 }
 
 footer .name,
@@ -87,6 +82,7 @@ footer a {
   text-transform: uppercase;
   font-size: .7em;
 }
+
 
 /*  ---------------------
     Helper Classes
@@ -114,6 +110,7 @@ footer a {
 .call-out {
   font-weight: bold;
 }
+
 
 /*  ---------------------
     Media Queries
