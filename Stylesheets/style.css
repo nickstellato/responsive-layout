@@ -44,12 +44,10 @@ p,
 }
 
 .profile-image {
-  width: 60%;
-  margin: inherit;
-}
-
-.portfolio-container {
-  margin: 50px 0;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  display: block;
 }
 
 .portfolio-image {
@@ -57,13 +55,8 @@ p,
   margin-top: 25px;
 }
 
-.contact {
-  margin-top: 50px;
-}
-
-footer {
-  margin: 20px;
-  padding-top: 20px;
+.main-footer {
+  padding: 20px 0;
   border-top: 1px solid lightgrey;
 }
 
@@ -92,13 +85,13 @@ p {
   font-size: 1em;
 }
 
-footer .name,
-footer a {
+.main-footer .name,
+.main-footer a {
   font-weight: 800;
   font-size: .9em;
 }
 
-footer a {
+.main-footer a {
   text-transform: uppercase;
   font-size: .7em;
 }
@@ -111,6 +104,7 @@ footer a {
 .container {
   width: 90%;
   margin: 0 auto;
+  padding: 30px 0;
 }
 
 .clearfix::after {
