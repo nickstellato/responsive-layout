@@ -44,7 +44,7 @@ p,
 }
 
 .profile-image {
-  width: 70%;
+  max-width: 70%;
   margin: 0 auto;
   padding-bottom: 10px;
   display: block;
@@ -129,3 +129,24 @@ p {
 /*  ---------------------
     Media Queries
 ------------------------ */
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+  .intro p {
+    float: left;
+    text-align: left;
+    max-width: 50%;
+  }
+
+  .profile-image {
+    float: right;
+  }
+
+  .main-footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width: 1024px\) {}
