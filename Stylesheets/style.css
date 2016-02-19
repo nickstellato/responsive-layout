@@ -34,7 +34,8 @@ p,
 }
 
 .main-header,
-.main-nav {
+.main-nav,
+.portfolio {
   display: flex;
   flex-direction: column;
 }
@@ -142,6 +143,10 @@ p {
     float: right;
   }
 
+  .contact {
+    width: 60%;
+  }
+
   .main-footer {
     width: 90%;
     margin: 0 auto;
@@ -149,4 +154,4 @@ p {
 
 }
 
-@media (min-width: 1024px\) {}
+@media (min-width: 1024px) {}
