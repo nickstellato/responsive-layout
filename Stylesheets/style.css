@@ -10,13 +10,14 @@
     Main Styles
 ------------------------ */
 body {
-  background-color: yellow;
+  background-color: offwhite;
 }
 
 .portfolio-wrapper {
   background-color: white;
+  width: 95%;
+  margin: 0 auto;
 }
-
 
 a {
   text-decoration: none;
