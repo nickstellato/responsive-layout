@@ -9,6 +9,14 @@
 /*  ---------------------
     Main Styles
 ------------------------ */
+body {
+  background-color: yellow;
+}
+
+.portfolio-wrapper {
+  background-color: white;
+}
+
 
 a {
   text-decoration: none;
