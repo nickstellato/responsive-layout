@@ -10,8 +10,126 @@
     Main Styles
 ------------------------ */
 
+a {
+  text-decoration: none;
+  color: black;
+}
 
+.main-header {
+  padding-bottom: 2em;
+}
 
+.main-header,
+.main-nav,
+.site-header,
+.intro,
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav,
+.footer-nav {
+  list-style: none;
+}
+
+.main-nav a {
+  display: block;
+  font-size: .9em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  padding-right: 2em;
+  padding-top: 2em;
+}
+
+.site-logo,
+.main-nav,
+.intro img,
+.intro p {
+  align-self: center;
+}
+
+.intro img {
+  width: 80%;
+  margin-top: 2em;
+}
+
+.intro p {
+  font-size: 1.25em;
+  text-align: center;
+  line-height: 1.4;
+  width: 100%;
+  margin-top: 2em;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.portfolio-piece {
+  padding-top: 1em;
+}
+
+.portfolio-piece h3 {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.portfolio-piece p {
+  font-size: 1.1em;
+  width: 90%;
+  margin: 1em auto;
+}
+
+.portfolio-piece h3,
+.portfolio-piece p {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.portfolio-piece img {
+  width: 100%;
+}
+
+.contact {
+  padding-bottom: 1em;
+}
+
+.main-footer {
+  text-align: center;
+}
+
+.footer-info {
+  padding-bottom: 1em;
+}
+
+.main-footer p {
+  line-height: 1.6;
+}
+
+.site-footer {
+  font-weight: 800;
+  border-top: 1px solid grey;
+  padding-top: 1em;
+  padding-bottom: 4em;
+}
+
+.footer-logo {
+  float: left;
+}
+
+.footer-links {
+  float: right;
+}
+
+.footer-nav {
+  display: none;
+}
 
 /*  ---------------------
     Layout Styles
@@ -22,28 +140,151 @@
   margin: 0 auto;
 }
 
-.portfolio img {
-  width: 100%;
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
-/*  ---------------------
-    Typography
------------------------- */
-
-
-
-
-/*  ---------------------
-    Helper Classes
------------------------- */
-
-
-
+.call-out {
+  font-weight: 800;
+  padding-left: 1em;
+}
 
 /*  ---------------------
     Media Queries
 ------------------------ */
 
-@media (min-width: 769px) and (max-width: 1023px) {}
+@media (min-width: 768px) {
+  .site-logo {
+    width: 200px;
+    padding-top: 1em;
+  }
 
-@media (min-width: 1024px) {}
+  .main-nav {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -2em;
+  }
+
+  .intro {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .intro img {
+    order: 1;
+    width: 50%;
+    margin-left: 2em;
+    align-self: flex-start;
+    padding-top: .8em;
+  }
+
+  .intro p {
+    width: 60%;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-right: auto;
+    align-self: flex-start;
+  }
+
+  .portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio-piece {
+    width: 49%;
+  }
+
+  .contact {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .footer-link {
+    display: none;
+  }
+
+  .footer-nav {
+    display: inline;
+  }
+
+  .footer-nav li {
+    display: inline;
+    padding-left: 1.5em;
+    text-transform: uppercase;
+    font-size: .8em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-header {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .site-header {
+    flex-direction: row;
+  }
+
+  .site-logo {
+    margin-right: auto;
+  }
+
+  .main-nav {
+    margin-top: 0;
+    align-self: center;
+  }
+
+  .main-nav li {
+    margin-left: .65em;
+  }
+
+  .intro {
+    margin-top: 0;
+  }
+
+  .intro p {
+    width: 55%;
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .intro img {
+    width: 40%;
+  }
+
+  .portfolio-piece {
+    width: 32%;
+    padding-bottom: 2em;
+  }
+
+  .portfolio-piece p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact {
+    margin-top: 2em;
+    padding-top: 2em;
+    margin-bottom: 6em;
+  }
+
+  .contact p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.3em;
+    line-height: 1.3;
+  }
+
+  .contact-info {
+    margin-top: 2em;
+  }
+
+  .contact-info p {
+    padding-bottom: 1em;
+  }
+}
