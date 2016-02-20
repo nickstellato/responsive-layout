@@ -7,151 +7,43 @@
 }
 
 /*  ---------------------
+    Main Styles
+------------------------ */
+
+
+
+
+/*  ---------------------
     Layout Styles
 ------------------------ */
 
-a:link {
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.main-nav {
-  list-style: none;
-}
-
-.main-nav li,
-.intro {
-  margin-top: 20px;
-}
-
-h2,
-h3,
-p,
-.main-nav li {
-  text-align: center;
-}
-
-.main-header,
-.main-nav,
-.portfolio {
-  display: flex;
-  flex-direction: column;
-}
-
-.name {
-  align-self: center;
-}
-
-.profile-image {
-  max-width: 70%;
+.wrapper {
+  width: 90%;
   margin: 0 auto;
-  padding-bottom: 10px;
-  display: block;
 }
 
-.portfolio-image {
+.portfolio img {
   width: 100%;
-  margin-top: 25px;
 }
-
-.main-footer {
-  padding: 20px 0;
-  border-top: 1px solid lightgrey;
-}
-
 
 /*  ---------------------
     Typography
 ------------------------ */
 
-h2,
-h3,
-p {
-  line-height: 1.5;
-}
 
-h2 {
-  text-transform: uppercase;
-  font-size: .8em;
-  font-weight: 800;
-}
-
-h3 {
-  font-weight: normal;
-}
-
-p {
-  font-size: 1em;
-}
-
-.main-footer .name,
-.main-footer a {
-  font-weight: 800;
-  font-size: .9em;
-}
-
-.main-footer a {
-  text-transform: uppercase;
-  font-size: .7em;
-}
 
 
 /*  ---------------------
     Helper Classes
 ------------------------ */
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 30px 0;
-}
 
-.clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
-}
-
-.call-out {
-  font-weight: bold;
-}
 
 
 /*  ---------------------
     Media Queries
 ------------------------ */
 
-@media (min-width: 769px) and (max-width: 1023px) {
-
-  .intro p {
-    float: left;
-    text-align: left;
-    max-width: 50%;
-  }
-
-  .profile-image {
-    float: right;
-  }
-
-  .contact {
-    width: 60%;
-  }
-
-  .main-footer {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-}
+@media (min-width: 769px) and (max-width: 1023px) {}
 
 @media (min-width: 1024px) {}
