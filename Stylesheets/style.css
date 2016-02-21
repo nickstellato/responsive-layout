@@ -62,7 +62,8 @@ a {
 .image-wrapper {
   width: 80%;
   margin-top: 3em;
-  background-color: beige;
+  background-color: cornflowerblue;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.4);
 }
 
 .image-wrapper img {
@@ -70,6 +71,7 @@ a {
   border-radius: 50%;
   margin: 2em auto;
   width: 50%;
+  box-shadow: inset 1px 2px 5px rgba(0,0,0,.4);
 }
 
 .intro p {
@@ -111,6 +113,7 @@ h2 {
 
 .portfolio-piece img {
   width: 100%;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.4);
 }
 
 .contact {
